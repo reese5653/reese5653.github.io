@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Personal Portfolio</title>
   <style>
+    @keyframes flashTitle {
+      0%, 100% { color: #222; }
+      25% { color: #2980f2; }
+      50% { color: #66a6ff; }
+      75% { color: #2980f2; }
+    }
+    h2 {
+      font-weight: bold;
+      animation: flashTitle 1.2s linear infinite;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px rgba(41,128,242,0.12);
+    }
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
     .profile-photo {
       display: block;
@@ -31,36 +43,42 @@
       min-height: 100vh;
     }
     .navbar { background: #222; padding: 1rem 0; }
+    .navbar {
+  /* animation removed */
+    }
     .navbar ul { list-style: none; display: flex; justify-content: center; gap: 2rem; margin: 0; padding: 0; }
     .navbar a { color: #fff; text-decoration: none; font-weight: 500; font-size: 1.1em; }
     .navbar a:hover { color: #66a6ff; }
     .section {
-      margin: 2rem auto;
-      padding: 2rem;
-      background: rgba(255,255,255,0.18);
-      border-radius: 20px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.3);
-      max-width: 900px;
-      color: #222;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.18);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.3);
+  max-width: 900px;
+  color: #222;
+  /* animation removed */
     }
     .project-list { display: flex; flex-wrap: wrap; gap: 1.5rem; }
     .project-card {
-      background: rgba(255,255,255,0.35);
-      border-radius: 16px;
-      padding: 1.5rem;
-      flex: 1 1 250px;
-      min-width: 220px;
-      box-shadow: 0 4px 24px rgba(41,128,242,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
-      transition: transform 0.2s, box-shadow 0.2s;
+  background: rgba(255,255,255,0.35);
+  border-radius: 16px;
+  padding: 1.5rem;
+  flex: 1 1 250px;
+  min-width: 220px;
+  box-shadow: 0 4px 24px rgba(41,128,242,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* animation removed */
     }
     .project-card:hover {
-      transform: translateY(-6px) scale(1.03);
-      box-shadow: 0 8px 32px rgba(41,128,242,0.18);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(41,128,242,0.18);
     }
+  /* animation removed */
     .project-card h3 { margin-top: 0; }
     .bio-section a {
       color: #0077b5;
@@ -112,11 +130,10 @@
     <div class="project-list">
       <div class="project-card">
         <h3>Project One</h3>
-the webcam and display it in the app in some format.</p>
         <p>
           Me and my classmates needed to research and find the appropriate APIs necessary to connect a basic application to the computer's webcam. The application must then capture a single picture from the webcam and display it in the app in some format.
         </p>
-        <p><strong>Technologies:</strong> React, Node.js</p>
+        <p><strong>Technologies:</strong> VsCode, Csharp</p>
         <a href="https://github.com/Lilbrosyrus/CS335/blob/main/CamWithPicture" target="_blank">GitHub Repo</a>
         <!-- <img src="project-one-screenshot.png" alt="Project One Screenshot" /> -->
       </div>
@@ -136,10 +153,10 @@ the webcam and display it in the app in some format.</p>
   </section>
 
   <section id="bio" class="section bio-section">
-    <h2>experience</h2>
+  <h2>Experience</h2>
     <p>
-      Information Security Intern, Samford University<br>
-      Help Desk Analyst Intern, Hibbett Sports Headquarters
+      - Information Security Intern, Samford University<br>
+      - Help Desk Analyst Intern, Hibbett Sports Headquarters
     </p>
     <a href="https://www.linkedin.com/in/maurice-davis12/" target="_blank">View LinkedIn Profile</a>
     <!-- Optional LinkedIn badge embed -->
@@ -155,7 +172,7 @@ the webcam and display it in the app in some format.</p>
     <h2>Contact Information</h2>
     <p>Email: <a href="mailto:mdavis61@samford.edu">mdavis61@samford.edu</a></p>
     <div class="social-links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://github.com/reese5653" target="_blank">GitHub</a> |
       <a href="https://www.linkedin.com/in/maurice-davis12" target="_blank">LinkedIn</a> |
       <a href="https://instagram.com/yourusername" target="_blank">Instagram</a> |
       <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
@@ -163,3 +180,5 @@ the webcam and display it in the app in some format.</p>
   </section>
 </body>
 </html>
+</html>
+
